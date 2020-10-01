@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando Flexbox</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+
+</head>
+
+<body>
+
+
+    <!-- Menu full screem -->
+    <input type="checkbox" id="check">
+    <label for="check" class="btn-menu">
+        <i class="fas fa-bars text-black"></i>
+    </label>
+    <div class="container">
+        
+        <div class="menu-full">            
+            <a href="#home" class="link" onclick="splitMenu()">Home</a>
+            <a href="#servicos" class="link" onclick="splitMenu()">Serviços</a>
+            <a href="#portifolio" class="link" onclick="splitMenu()">Portifólio</a>
+            <a href="#colaboradores" class="link" onclick="splitMenu()">Colaboradores</a>
+            <a href="#contatos" class="link" onclick="splitMenu()">Contatos</a>
+            <span class="select"></span>
+        </div>
+    </div>
+
+    <!-- Menu full screem -->
+
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fab fa-angrycreative"></i>
+            </div>
+            
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#portifolio">Portifólio</a>
+                <a href="#colaboradores">Colaboradores</a>
+                <a href="#contatos">Contatos</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="conteudo">
+
+    </section>
+
+    <section id="servicos" class="service">
+        <div class="service-titulo">
+            <h1>Serviços</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur.</p>
+        </div>
+
+        <div class="service-itens">
+            <div class="service-item">
+                <i class="fab fa-amazon-pay"></i>
+                <h3>E-Commerce</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam hic cupiditate amet quam! Quos earum
+                    esse nulla sint, cumque, repellendus ipsum eum dolor ad saepe, incidunt recusandae. Amet, explicabo
+                    neque!</p>
+            </div>
+
+            <div class="service-item">
+                <i class="fab fa-accusoft"></i>
+                <h3>Design Responsivo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam hic cupiditate amet quam! Quos earum
+                    esse nulla sint, cumque, repellendus ipsum eum dolor ad saepe, incidunt recusandae. Amet, explicabo
+                    neque!</p>
+            </div>
+
+            <div class="service-item">
+                <i class="fab fa-expeditedssl"></i>
+                <h3>Segurança</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam hic cupiditate amet quam! Quos earum
+                    esse nulla sint, cumque, repellendus ipsum eum dolor ad saepe, incidunt recusandae. Amet, explicabo
+                    neque!</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="portifolio" class="portifolio">
+        <div class="portifolio-titulo">
+            <h1>Portifólio</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur.</p>
+        </div>
+
+        <div class="portifolio-itens">
+            <div class="portifolio-item">
+                <img src="img/img2.jpeg" width="350px" height="250px">
+                <h3>E-Commerce</h3>
+                <p>Lorem ipsum dolor</p>
+            </div>
+
+            <div class="portifolio-item">
+                <img src="img/img3.jpg" width="350px" height="250px">
+                <h3>Design Responsivo</h3>
+                <p>Lorem ipsum dolor</p>
+            </div>
+
+            <div class="portifolio-item">
+                <img src="img/img4.jpeg" width="350px" height="250px">
+                <h3>Segurança</h3>
+                <p>Lorem ipsum dolor</p>
+            </div>
+
+            <div class="portifolio-item">
+                <img src="img/img5.jpeg" width="350px" height="250px">
+                <h3>E-Commerce</h3>
+                <p>Lorem ipsum dolor</p>
+            </div>
+
+            <div class="portifolio-item">
+                <img src="img/img6.jpg" width="350px" height="250px">
+                <h3>Design Responsivo</h3>
+                <p>Lorem ipsum dolor</p>
+            </div>
+
+            <div class="portifolio-item">
+                <img src="img/img7.jpg" width="350px" height="250px">
+                <h3>Segurança</h3>
+                <p>Lorem ipsum dolor</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="colaboradores" class="colaboradores">
+        <div class="colaboradores-titulo">
+            <h1>Colaboradores</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur.</p>
+        </div>
+
+        <div class="colaboradores-grupo">
+            <div class="colaboradores-profile">
+                <div id="perfil-1" class="colaboradores-perfil"></div>
+                <h3>Jessy Mores</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur.</p>
+                <div class="midias">
+                    <span class="face"><i class="fab fa-facebook-f"></i></span>
+                    <span class="twitter"><i class="fab fa-twitter"></i></span>
+                    <span class="insta"><i class="fab fa-instagram"></i></span>
+                </div>
+            </div>
+
+            <div class="colaboradores-profile">
+                <div id="perfil-2" class="colaboradores-perfil"></div>
+                <h3>Mike Willer</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur.</p>
+                <div class="midias">
+                    <span class="face"><i class="fab fa-facebook-f"></i></span>
+                    <span class="twitter"><i class="fab fa-twitter"></i></span>
+                    <span class="insta"><i class="fab fa-instagram"></i></span>
+
+                </div>
+            </div>
+
+            <div class="colaboradores-profile">
+                <div id="perfil-3" class="colaboradores-perfil"></div>
+                <h3>Luna Maya</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur.</p>
+                <div class="midias">
+                    <span class="face"><i class="fab fa-facebook-f"></i></span>
+                    <span class="twitter"><i class="fab fa-twitter"></i></span>
+                    <span class="insta"><i class="fab fa-instagram"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium neque commodi quaerat pariatur
+                aperiam vel consequatur fugiat sapiente, omnis nihil officia illum nobis necessitatibus eius dignissimos
+                sed earum, corrupti eos!</p>
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <div class="contatos-titulo">
+            <h1>Contatos</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur.</p>
+        </div>
+        <div class="contatos-form">
+            <div class="contatos-form-input">
+                <input type="text" id="nome" placeholder="Seu nome*">
+                <input type="emai" id="emai" placeholder="Seu emai*">
+                <input type="text" id="tel" placeholder="Seu telefone*">
+            </div>
+            <div class="contatos-form-msg">
+                <textarea id="msg" rows="15" cols="45" placeholder="Digite sua mensagem*"></textarea>
+            </div>
+        </div>
+        <button>Enviar</button>
+    </section>
+
+    <footer class="rodape">
+        <div class="rodape-itens">
+            <p>Copyright &copy; Thiago Freitas - 2020</p>
+            <div class="rodape-midias">
+                <span class="mid-face"><i class="fab fa-facebook-f"></i></span>
+                <span class="mid-twit"><i class="fab fa-twitter"></i></span>
+                <span class="mid-insta"><i class="fab fa-instagram"></i></span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
