@@ -13,18 +13,9 @@ function splitMenu() {
     }
 }
 
-/*
-const select = document.getElementById('select')
-const item = document.querySelectorAll('.link')
 
-function indicador(e) {
-    select.style.top = e.offsetTop + 'px'
-    select.style.width = e.offsetWidth + 'px'
-}
 
-item.forEach(link => {
-    link.addEventListener("mousemove", (e) => {
-        indicador(e.target)
-    })
-})
-*/
+
+
+
+

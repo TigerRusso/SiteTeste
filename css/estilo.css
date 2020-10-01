@@ -100,7 +100,7 @@ body {
     box-sizing: border-box;
     background: #fc0606;
     text-align: center;
-    padding-top: 14px;
+    padding-top: 14px;    
     border-radius: 50%;
     position: absolute;
     top: 20px;
@@ -111,11 +111,38 @@ body {
     z-index: 5;
 }
 
-.btn-menu i {  
-    color: #fff;  
-    font-size: 30px;    
-    
-    
+
+
+.btn-menu .bar {    
+    background: white;
+    width: 35px;
+    height: 5px;
+    margin: 5px 0 0 12px;
+    box-shadow: 0 0 10px 0 rgba(14, 13, 13, 0.5);
+    border-radius: 2px;
+    transition: 0.4s;
+}
+
+.btn-menu .bar:nth-child(1) {  
+    margin-top: 4px;
+}
+
+#check:checked + .btn-menu .bar:nth-child(1){
+    margin-top: 14px;
+    transform: rotate(-225deg);
+}
+
+#check:checked + .btn-menu .bar:nth-child(2){
+    opacity: 0;
+}
+
+#check:checked + .btn-menu .bar:nth-child(3){
+    margin-top: -15px;
+    transform: rotate(225deg);
+}
+
+#check:checked + .btn-menu{    
+    transform: rotateX(180deg);
 }
 
 
@@ -750,12 +777,7 @@ nav {
 }
 
 /*
-@media (max-width: 320px) {
 
-    .btn-menu {
-        top: 10px;
-        right: 50px;
-    }
     
 } */
 
@@ -774,4 +796,13 @@ nav {
         top: 10px;
         right: 30px;
     }
+}
+
+@media (max-width: 425px) {
+
+    .contatos-form-msg #msg {
+        width: 250px;
+        height: 120px;
+    }
+
 }
