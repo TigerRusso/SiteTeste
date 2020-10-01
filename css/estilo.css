@@ -749,7 +749,7 @@ nav {
     
 }
 
-
+/*
 @media (max-width: 320px) {
 
     .btn-menu {
@@ -757,14 +757,21 @@ nav {
         right: 50px;
     }
     
-}
+} */
 
 @media (max-width: 768px) {
 
     .conteudo {           
         background: url(../img/bg.jpg) no-repeat;   
-        background-size: cover;     
-        
-       
+        background-size: cover;          
     } 
+
+    .logo {
+        margin-left: 0px;
+    }
+
+    .btn-menu {
+        top: 10px;
+        right: 30px;
+    }
 }
