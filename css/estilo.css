@@ -95,8 +95,15 @@ body {
 }
 
 .btn-menu {
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    background: #fc0606;
+    text-align: center;
+    padding-top: 14px;
+    border-radius: 50%;
     position: absolute;
-    top: 25px;
+    top: 20px;
     right: 36px;
     order: 3;
     cursor: pointer;
@@ -196,7 +203,6 @@ nav {
 .conteudo {    
     width: 100vw;
     height: 100vh;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -709,7 +715,7 @@ nav {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        clip-path: circle(25px at calc(100% - 65px) 40px);         
+        clip-path: circle(1px at calc(100% - 5px) 0px);         
         position: fixed;
     }
 
@@ -743,10 +749,21 @@ nav {
     
 }
 
-/*
-@media (max-width: 880px) {
 
+@media (max-width: 320px) {
+
+    .btn-menu {
+        right: 50px;
+    }
     
 }
 
-*/
+@media (max-width: 768px) {
+
+    .conteudo {           
+        background: url(../img/bg.jpg) no-repeat;   
+        background-size: cover;     
+        
+       
+    } 
+}
