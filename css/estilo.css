@@ -217,6 +217,7 @@ nav {
     height: 100%;
     margin-left: 30px;
     order: 1;
+    cursor: pointer;
 }
 
 .logo i {
@@ -423,6 +424,7 @@ nav {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .colaboradores-profile h3 {
@@ -431,6 +433,7 @@ nav {
 
 .colaboradores-profile p {
     font-style: italic;
+    text-align: center;
 }
 
 .colaboradores-perfil {
@@ -680,6 +683,7 @@ nav {
     display: inline-block;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .rodape-itens .rodape-midias {
@@ -799,6 +803,23 @@ nav {
 }
 
 @media (max-width: 425px) {
+
+    .contatos-form {
+        height: 350px;
+    }
+
+    .contatos-form-msg #msg {
+        width: 330px;
+        height: 120px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .contatos-form {
+        height: 350px;
+    }
 
     .contatos-form-msg #msg {
         width: 250px;
